@@ -1,0 +1,36 @@
+ <div class="container">
+  <div class="restaraunts">
+    <div class="restaraunts__title">Nearby restaurants</div>
+    <div class="restaraunts__list">
+      <div class="restaraunts-item" *ngFor="let item of restaraunts">
+        <div class="restaraunts-item__img">
+          <img [src]="item.img" [alt]="item.title" />
+        </div>
+        <div class="restaraunts-item__title"><a href="">{{ item.title }}</a></div>
+        <div class="restaraunts-item__time">
+          <img class="item-clock" src="assets/clock.png" alt="" />{{ item.time }}
+        </div>
+        <div class="restaraunts-item__price">{{ item.price }}</div>
+        <div class="restaraunts-item__tags">
+          <div class="restaraunts-item__tag" *ngFor="let tag of item.tags">
+            <img [src]="tag.img" [alt]="tag.title" />
+  
+            {{ tag.title }}
+          </div>
+        </div>
+        <div class="restaraunts-item__cart">
+          <div *ngIf="item.cart"></div>
+          <img class="item-basket" src="assets/basket.png" alt="basket" />
+          {{ item.cart }}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+ </div>
+  
+
+  
+

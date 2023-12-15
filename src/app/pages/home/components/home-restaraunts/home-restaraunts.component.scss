@@ -1,0 +1,53 @@
+.restaraunts__title {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  margin-bottom: 16px;
+}
+
+.restaraunts__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.restaraunts-item__img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.restaraunts-item__time {
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.item-clock {
+  max-width: 12px;
+  flex-shrink: 0;
+}
+
+.restaraunts-item__price {
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.restaraunts-item__tags {
+  color: var(--gray-dark);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
